@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      target: dev         # 🔑 build the dev stage
+    command: ["npm", "run", "dev"]   # 🔑 YAML array — *no quotes*
+    volumes:
+      - .:/app            # live code ↔ container
+      - /app/node_modules # keeps container's deps
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true

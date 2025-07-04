@@ -1,0 +1,8 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile   # default prod target
+    environment:
+      - NODE_ENV=production
+    command: ["npm","start"]
