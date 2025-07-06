@@ -18,11 +18,19 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^10.4.21",
     "next": "latest",
+    "postcss": "^8.5.6",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "swiper": "^11.2.10",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^24.0.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "typescript": "latest"
